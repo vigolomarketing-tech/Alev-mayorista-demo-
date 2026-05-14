@@ -1,238 +1,118 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ALEV Mayorista | Demo Rediseño</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-<div class="topbar">
-  <span>🚚 Envíos a todo el país</span>
-  <span>💜 Precios mayoristas</span>
-  <span>🔥 Promos por volumen</span>
-</div>
-
-<header class="header">
-  <button class="menu-btn" onclick="openMenu()">☰ <span>MENÚ</span></button>
-
-  <div class="logo">
-    <strong>ALEV</strong>
-    <small>MAYORISTA</small>
-  </div>
-
-  <div class="header-icons">
-    <button>🔍</button>
-    <button>👤</button>
-    <button class="cart">🛒<b>0</b></button>
-  </div>
-</header>
-
-<aside class="side-menu" id="sideMenu">
-  <div class="side-head">
-    <div>
-      <strong>ALEV</strong>
-      <small>MAYORISTA</small>
-    </div>
-    <button onclick="closeMenu()">✕</button>
-  </div>
-
-  <input type="text" placeholder="Buscar productos..." />
-
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Tienda</a>
-
-    <details open>
-      <summary>Categorías</summary>
-      <a>Accesorios</a>
-      <a>Bombachas</a>
-      <a>Hombre</a>
-      <a>Lencería</a>
-      <a>Ofertas</a>
-      <a>Medias</a>
-      <a>Niños</a>
-      <a>Pijamas</a>
-      <a>Ropa deportiva</a>
-      <a>Ropa de baño</a>
-    </details>
-
-    <details>
-      <summary>Marcas</summary>
-      <a>Avril Kaury</a>
-      <a>Alteza</a>
-      <a>Andros</a>
-      <a>Aretha</a>
-      <a>Brigitte</a>
-      <a>Coramina</a>
-      <a>Deseo</a>
-      <a>Floyd</a>
-      <a>Go</a>
-      <a>Lody</a>
-      <a>Marcela Koury</a>
-      <a>Natubel</a>
-    </details>
-
-    <a href="#">Preguntas frecuentes</a>
-    <a href="#">Formas de envío</a>
-    <a href="#">Lista de precios</a>
-    <a href="#">Contacto</a>
-  </nav>
-</aside>
-
-<div class="menu-overlay" id="overlay" onclick="closeMenu()"></div>
+<!-- HERO NUEVO (reemplazá tu hero actual por este) -->
 
 <section class="hero">
+  <div class="hero-overlay"></div>
+
   <div class="hero-content">
-    <span>CATÁLOGO MAYORISTA 2026</span>
-    <h1>Más orden. Más estilo. Más confianza para comprar.</h1>
+    <span class="hero-tag">CATÁLOGO MAYORISTA 2026</span>
+
+    <h1>
+      Más orden.<br>
+      Más estilo.<br>
+      Más confianza<br>
+      para comprar.
+    </h1>
+
     <p>
-      Una experiencia mayorista más clara, moderna y profesional sin perder la variedad de productos.
+      Una experiencia mayorista más clara, moderna y profesional
+      sin perder la variedad de productos.
     </p>
 
-    <div class="hero-actions">
-      <a href="#productos" class="primary">Ver productos</a>
-      <a href="#registro" class="secondary">Hacerme cliente</a>
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary">Ver catálogo</a>
+      <a href="#" class="btn-secondary">WhatsApp</a>
+    </div>
+
+    <div class="hero-features">
+      <div>✓ Compra segura</div>
+      <div>✓ Envíos a todo el país</div>
+      <div>✓ Stock permanente</div>
     </div>
   </div>
+</section>
 
-  <div class="hero-card">
-    <small>Beneficios activos</small>
-    <h3>Hasta 40% OFF por volumen</h3>
-    <p>Promociones, stock permanente y atención personalizada.</p>
+<!-- CATEGORÍAS -->
+
+<section class="categories">
+  <div class="section-header">
+    <h2>Categorías</h2>
+    <a href="#">Ver todas</a>
+  </div>
+
+  <div class="categories-grid">
+
+    <div class="category-card">
+      <div class="category-image">Imagen Producto</div>
+      <div class="category-info">
+        <h3>Lencería</h3>
+        <button>Ver más</button>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <div class="category-image">Imagen Producto</div>
+      <div class="category-info">
+        <h3>Bombachas</h3>
+        <button>Ver más</button>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <div class="category-image">Imagen Producto</div>
+      <div class="category-info">
+        <h3>Pijamas</h3>
+        <button>Ver más</button>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <div class="category-image">Imagen Producto</div>
+      <div class="category-info">
+        <h3>Hombre</h3>
+        <button>Ver más</button>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<section class="quick-benefits">
-  <article>
-    <strong>01</strong>
-    <h3>Stock permanente</h3>
-    <p>Productos disponibles todo el año.</p>
-  </article>
-  <article>
-    <strong>02</strong>
-    <h3>Envíos al país</h3>
-    <p>Pedidos mayoristas a toda Argentina.</p>
-  </article>
-  <article>
-    <strong>03</strong>
-    <h3>Precios por volumen</h3>
-    <p>Mejores precios según cantidad.</p>
-  </article>
-</section>
+<!-- PRODUCTOS -->
 
-<section class="section" id="categorias">
-  <div class="section-title">
-    <span>Explorá el catálogo</span>
-    <h2>Categorías principales</h2>
-    <p>Más visual, más claro y con mejor separación para que el cliente encuentre rápido lo que busca.</p>
-  </div>
-
-  <div class="category-grid">
-    <article><div>Imagen Lencería</div><h3>Lencería</h3><a>Ver más</a></article>
-    <article><div>Imagen Bombachas</div><h3>Bombachas</h3><a>Ver más</a></article>
-    <article><div>Imagen Hombre</div><h3>Hombre</h3><a>Ver más</a></article>
-    <article><div>Imagen Pijamas</div><h3>Pijamas</h3><a>Ver más</a></article>
-    <article><div>Imagen Medias</div><h3>Medias</h3><a>Ver más</a></article>
-    <article><div>Imagen Deportiva</div><h3>Ropa deportiva</h3><a>Ver más</a></article>
-  </div>
-</section>
-
-<section class="promo-banner" id="registro">
-  <div>
-    <span>Clientes mayoristas</span>
-    <h2>Accedé a precios exclusivos</h2>
-    <p>Registro gratuito, aprobación rápida y asesoramiento para tu negocio.</p>
-  </div>
-  <a href="#">Registrarme ahora</a>
-</section>
-
-<section class="section light" id="productos">
-  <div class="section-title left">
-    <span>Últimos ingresos</span>
-    <h2>Productos destacados</h2>
-    <p>Cards más limpias, con precios claros y mejor jerarquía visual.</p>
+<section class="products">
+  <div class="section-header">
+    <h2>Nuevos ingresos</h2>
+    <a href="#">Ver todos</a>
   </div>
 
   <div class="products-grid">
-    <article class="product">
-      <b>HOT</b>
-      <div class="product-img">Imagen producto</div>
-      <h3>Corpiño seamless</h3>
-      <p>Lencería</p>
-      <strong>$14.255</strong>
-      <button>Seleccionar opciones</button>
-    </article>
 
-    <article class="product">
-      <b>NUEVO</b>
-      <div class="product-img">Imagen producto</div>
-      <h3>Boxer algodón</h3>
-      <p>Hombre</p>
-      <strong>$6.454 - $7.080</strong>
-      <button>Seleccionar opciones</button>
-    </article>
+    <div class="product-card">
+      <div class="product-img">Producto</div>
 
-    <article class="product">
-      <b>PACK</b>
-      <div class="product-img">Imagen producto</div>
-      <h3>Pack bombachas</h3>
-      <p>Bombachas</p>
-      <strong>Consultar</strong>
-      <button>Seleccionar opciones</button>
-    </article>
+      <div class="product-content">
+        <span class="product-category">Lencería</span>
 
-    <article class="product">
-      <b>OFERTA</b>
-      <div class="product-img">Imagen producto</div>
-      <h3>Pijama soft</h3>
-      <p>Pijamas</p>
-      <strong>$18.500</strong>
-      <button>Seleccionar opciones</button>
-    </article>
+        <h3>Conjunto Art. 204</h3>
+
+        <div class="price">$24.900</div>
+
+        <button>Seleccionar opciones</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img">Producto</div>
+
+      <div class="product-content">
+        <span class="product-category">Bombachas</span>
+
+        <h3>Pack x3 Art. 120</h3>
+
+        <div class="price">$13.500</div>
+
+        <button>Seleccionar opciones</button>
+      </div>
+    </div>
+
   </div>
 </section>
-
-<section class="why">
-  <div class="section-title">
-    <span>Por qué elegir ALEV</span>
-    <h2>Una tienda mayorista más profesional</h2>
-  </div>
-
-  <div class="why-grid">
-    <article>🚚<h3>Envíos a todo el país</h3><p>Compras mayoristas con logística clara.</p></article>
-    <article>📦<h3>Catálogo amplio</h3><p>Categorías, marcas y productos organizados.</p></article>
-    <article>💬<h3>Atención personalizada</h3><p>Consultas rápidas para cerrar pedidos.</p></article>
-    <article>💎<h3>Imagen premium</h3><p>Diseño moderno que genera más confianza.</p></article>
-  </div>
-</section>
-
-<footer>
-  <strong>ALEV Mayorista</strong>
-  <p>Demo visual de rediseño ecommerce premium.</p>
-</footer>
-
-<a class="wpp" href="#">💬</a>
-
-<nav class="mobile-nav">
-  <a>Tienda</a>
-  <a>Favoritos</a>
-  <a>Carrito</a>
-  <a>Cuenta</a>
-</nav>
-
-<script>
-  function openMenu() {
-    document.getElementById("sideMenu").classList.add("active");
-    document.getElementById("overlay").classList.add("active");
-  }
-
-  function closeMenu() {
-    document.getElementById("sideMenu").classList.remove("active");
-    document.getElementById("overlay").classList.remove("active");
-  }
-</script>
-
-</body>
-</html>
