@@ -3,79 +3,198 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A Lencería Mayorista | Demo Premium</title>
+  <title>A Lencería Mayorista | Rediseño Demo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="promo">Registrate y accedé a precios mayoristas exclusivos</header>
+<div class="top-alert">
+  <span>Mayorista online</span>
+  <strong>Registrate y accedé a precios exclusivos</strong>
+</div>
 
-<nav class="nav">
-  <button>☰ MENÚ</button>
-  <div class="logo">
-    <span>A</span>
-    <strong>LENCERÍA</strong>
-    <small>MAYORISTA</small>
+<header class="header">
+  <button class="menu-btn" id="openMenu">☰</button>
+
+  <div class="brand">
+    <div class="brand-a">A</div>
+    <div>
+      <h1>Lencería</h1>
+      <p>Mayorista</p>
+    </div>
   </div>
-  <div class="cart">🛍️<b>0</b></div>
-</nav>
+
+  <div class="icons">
+    <button>🔎</button>
+    <button class="cart">🛍️<span>0</span></button>
+  </div>
+</header>
+
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <div class="brand small">
+      <div class="brand-a">A</div>
+      <div>
+        <h1>Lencería</h1>
+        <p>Mayorista</p>
+      </div>
+    </div>
+    <button id="closeMenu">✕</button>
+  </div>
+
+  <input class="search" placeholder="Buscar productos..." />
+
+  <nav class="drawer-nav">
+    <a href="#">Inicio</a>
+    <a href="#">Tienda</a>
+    <a href="#">Lencería</a>
+    <a href="#">Bombachas</a>
+    <a href="#">Hombre</a>
+    <a href="#">Pijamas</a>
+    <a href="#">Ropa deportiva</a>
+    <a href="#">Lista de precios</a>
+    <a href="#">Contacto</a>
+  </nav>
+</aside>
+
+<div class="overlay" id="overlay"></div>
 
 <section class="hero">
-  <div class="hero-card">
-    <p>BENEFICIOS EXCLUSIVOS</p>
-    <h1>Comprá por mayor con una experiencia más simple</h1>
-    <span>Catálogo organizado, precios claros y acceso rápido a promociones.</span>
-    <a href="#">Hacerme cliente</a>
+  <div class="hero-copy">
+    <span>Nueva experiencia mayorista</span>
+    <h2>Tu catálogo más claro, moderno y fácil de comprar</h2>
+    <p>Una tienda pensada para vender mejor desde celular, ordenar categorías y generar más confianza desde el primer click.</p>
+
+    <div class="hero-actions">
+      <a href="#" class="primary">Ver catálogo</a>
+      <a href="#" class="secondary">Hacerme cliente</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="mock-card one">
+      <span>HOT</span>
+      <div class="shape bra"></div>
+      <h3>Corpiño seamless</h3>
+      <p>$14.255</p>
+    </div>
+
+    <div class="mock-card two">
+      <span>NEW</span>
+      <div class="shape boxer"></div>
+      <h3>Boxer premium</h3>
+      <p>$7.080</p>
+    </div>
   </div>
 </section>
 
-<section class="section">
-  <h2>Categorías principales</h2>
-  <p>Una navegación más clara para que tus clientes encuentren rápido lo que buscan.</p>
-
-  <div class="grid">
-    <article class="cat violeta"><span>01</span><h3>Lencería</h3></article>
-    <article class="cat rosa"><span>02</span><h3>Bombachas</h3></article>
-    <article class="cat beige"><span>03</span><h3>Medias</h3></article>
-    <article class="cat lila"><span>04</span><h3>Pijamas</h3></article>
-    <article class="cat gris"><span>05</span><h3>Hombre</h3></article>
-    <article class="cat sport"><span>06</span><h3>Ropa deportiva</h3></article>
+<section class="benefits">
+  <div>
+    <strong>01</strong>
+    <h3>Compra rápida</h3>
+    <p>Categorías claras y acceso directo a productos.</p>
+  </div>
+  <div>
+    <strong>02</strong>
+    <h3>Mayorista real</h3>
+    <p>Registro, promociones y lista de precios destacada.</p>
+  </div>
+  <div>
+    <strong>03</strong>
+    <h3>Mobile first</h3>
+    <p>Diseño pensado para que el cliente compre desde el celular.</p>
   </div>
 </section>
 
-<section class="featured">
-  <h2>Productos destacados</h2>
-  <p>Diseño más limpio, moderno y preparado para vender mejor desde celular.</p>
+<section class="categories">
+  <div class="section-head">
+    <span>Categorías</span>
+    <h2>Orden más visual y profesional</h2>
+  </div>
 
-  <div class="products">
+  <div class="cat-grid">
+    <article><span>01</span><h3>Lencería</h3><p>Ver productos →</p></article>
+    <article><span>02</span><h3>Bombachas</h3><p>Ver productos →</p></article>
+    <article><span>03</span><h3>Hombre</h3><p>Ver productos →</p></article>
+    <article><span>04</span><h3>Pijamas</h3><p>Ver productos →</p></article>
+    <article><span>05</span><h3>Medias</h3><p>Ver productos →</p></article>
+    <article><span>06</span><h3>Ropa deportiva</h3><p>Ver productos →</p></article>
+  </div>
+</section>
+
+<section class="products">
+  <div class="section-head">
+    <span>Destacados</span>
+    <h2>Productos mejor presentados</h2>
+  </div>
+
+  <div class="product-grid">
     <article class="product">
-      <span class="tag">HOT</span>
-      <div class="product-img violeta"></div>
-      <h3>Corpiños - Art. AR945</h3>
-      <p>Lencería</p>
-      <strong>$14.255</strong>
-      <button>Seleccionar opciones</button>
+      <div class="product-art art-1"></div>
+      <div class="product-info">
+        <small>Lencería</small>
+        <h3>Corpiños - Art. AR945</h3>
+        <strong>$14.255</strong>
+        <button>Seleccionar</button>
+      </div>
     </article>
 
     <article class="product">
-      <span class="tag">HOT</span>
-      <div class="product-img gris"></div>
-      <h3>Boxer - Art. XY1387</h3>
-      <p>Hombre</p>
-      <strong>$6.454 - $7.080</strong>
-      <button>Seleccionar opciones</button>
+      <div class="product-art art-2"></div>
+      <div class="product-info">
+        <small>Hombre</small>
+        <h3>Boxer - Art. XY1387</h3>
+        <strong>$6.454 - $7.080</strong>
+        <button>Seleccionar</button>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="product-art art-3"></div>
+      <div class="product-info">
+        <small>Bombachas</small>
+        <h3>Pack algodón premium</h3>
+        <strong>Consultar</strong>
+        <button>Seleccionar</button>
+      </div>
     </article>
   </div>
 </section>
 
-<a class="wpp" href="#">💬</a>
+<section class="cta">
+  <h2>Una web más clara vende con más confianza</h2>
+  <p>Rediseño pensado para mejorar estética, navegación mobile y presentación del catálogo mayorista.</p>
+  <a href="#">Solicitar propuesta</a>
+</section>
 
-<footer class="bottom">
-  <span>🏬<br>Tienda</span>
-  <span>♡<br>Favoritos</span>
-  <span>🛍️<br>Carrito</span>
-  <span>👤<br>Cuenta</span>
+<footer class="mobile-nav">
+  <a>Inicio</a>
+  <a>Categorías</a>
+  <a>Carrito</a>
+  <a>Cuenta</a>
 </footer>
+
+<script>
+  const drawer = document.getElementById("drawer");
+  const overlay = document.getElementById("overlay");
+  const openMenu = document.getElementById("openMenu");
+  const closeMenu = document.getElementById("closeMenu");
+
+  openMenu.onclick = () => {
+    drawer.classList.add("active");
+    overlay.classList.add("active");
+  };
+
+  closeMenu.onclick = () => {
+    drawer.classList.remove("active");
+    overlay.classList.remove("active");
+  };
+
+  overlay.onclick = () => {
+    drawer.classList.remove("active");
+    overlay.classList.remove("active");
+  };
+</script>
 
 </body>
 </html>
